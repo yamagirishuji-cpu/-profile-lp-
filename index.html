@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ギタリスト、シンガー、舞台監督、演出家、プロデューサー。山切修二の活動と実績。">
+  <meta name="theme-color" content="#101211">
+  <title>山切修二 | Shuji Yamagiri — D･I･O Entertainment</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101211;
+      --panel: #171a18;
+      --panel-light: #1d211e;
+      --text: #f2f0e9;
+      --muted: #aaa99f;
+      --line: rgba(242, 240, 233, .14);
+      --green: #a7b99b;
+      --gold: #c6a56a;
+      --serif: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+      --sans: "Avenir Next", "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 86px; }
+    body { margin: 0; color: var(--text); background: var(--bg); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .wrap { width: min(1160px, calc(100% - 64px)); margin-inline: auto; }
+    .eyebrow, .nav, .filter, .section-kicker, .hero-note, .footer-label {
+      font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+    }
+    .topbar { position: absolute; inset: 0 0 auto; z-index: 5; border-bottom: 1px solid rgba(255,255,255,.15); }
+    .topbar-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 12px; font-size: 12px; font-weight: 800; letter-spacing: .12em; }
+    .brand-mark { display: grid; width: 30px; aspect-ratio: 1; place-items: center; border: 1px solid var(--gold); color: var(--gold); font-family: var(--serif); font-size: 13px; }
+    .nav { display: flex; gap: 30px; color: rgba(255,255,255,.75); }
+    .nav a { transition: color .2s; }
+    .nav a:hover { color: var(--gold); }
+    .hero { position: relative; min-height: 740px; min-height: max(740px, 100svh); overflow: hidden; isolation: isolate; display: flex; align-items: flex-start; }
+    .hero::before { position: absolute; z-index: -2; inset: 0; content: ""; background: url("images/62A_8620%202.jpg") 50% 30% / cover no-repeat; transform: scale(1.015); }
+    .hero::after { position: absolute; z-index: -1; inset: 0; content: ""; background: linear-gradient(90deg, rgba(12,14,13,.38) 0%, rgba(12,14,13,.19) 44%, transparent 78%), linear-gradient(180deg, rgba(12,14,13,.02) 0%, rgba(12,14,13,.04) 38%, rgba(12,14,13,.68) 73%, var(--bg) 100%); }
+    .hero-content { padding: clamp(120px, 17vh, 170px) 0 60px; }
+    .hero-copy { max-width: min(510px, 46vw); margin-left: auto; padding: 26px clamp(24px, 3vw, 38px); border-left: 1px solid rgba(198,165,106,.65); background: linear-gradient(135deg, rgba(16,18,17,.94), rgba(16,18,17,.84)); backdrop-filter: blur(5px); }
+    .eyebrow { margin: 0 0 28px; color: var(--gold); }
+    .hero h1 { margin: 0; font: 500 clamp(48px, 7vw, 82px)/1.15 var(--serif); letter-spacing: .05em; }
+    .hero h1 span { display: block; margin-top: 12px; color: rgba(242,240,233,.8); font: 500 clamp(12px, 1.4vw, 16px)/1.5 var(--sans); letter-spacing: .26em; }
+    .hero-role { margin: 30px 0 0; color: #deddd5; font-size: clamp(13px, 1.3vw, 16px); letter-spacing: .045em; line-height: 2; line-break: strict; }
+    .hero-intro { max-width: 520px; margin: 26px 0 0; color: var(--muted); font-family: var(--serif); font-size: 14px; line-height: 2.15; line-break: strict; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 35px; }
+    .button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 28px; padding: 0 18px; border: 1px solid rgba(242,240,233,.55); font-size: 11px; font-weight: 700; letter-spacing: .08em; transition: .2s ease; }
+    .button::after { content: "↘"; color: var(--gold); font-size: 15px; }
+    .button:hover { border-color: var(--gold); background: var(--gold); color: var(--bg); }
+    .button:hover::after { color: var(--bg); }
+    .hero-note { position: absolute; right: max(32px, calc((100vw - 1160px) / 2)); bottom: 42px; color: rgba(255,255,255,.6); writing-mode: vertical-rl; }
+    .hero-note::before { display: inline-block; width: 1px; height: 52px; margin-bottom: 14px; background: var(--gold); content: ""; }
+    .section { padding: 112px 0; }
+    .section-head { display: grid; grid-template-columns: 180px 1fr; gap: 40px; align-items: start; margin-bottom: 50px; }
+    .section-kicker { display: flex; align-items: center; gap: 13px; padding-top: 10px; color: var(--gold); }
+    .section-kicker::after { width: 32px; height: 1px; background: currentColor; content: ""; }
+    h2 { margin: 0; font: 500 clamp(32px, 5.4vw, 62px)/1.25 var(--serif); letter-spacing: .035em; }
+    .section-lead { max-width: 700px; margin: 18px 0 0; color: var(--muted); font-size: 14px; line-height: 1.95; }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; padding-bottom: 17px; border-bottom: 1px solid var(--line); }
+    .filter { min-height: 38px; padding: 0 15px; border: 1px solid var(--line); color: var(--muted); background: transparent; cursor: pointer; transition: .2s ease; }
+    .filter:hover, .filter[aria-pressed="true"] { border-color: var(--green); color: var(--bg); background: var(--green); }
+    .filter:focus-visible, a:focus-visible, .button:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+    .work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .work-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); background: var(--panel); transition: transform .25s ease, border-color .25s ease; }
+    .work-card:hover { transform: translateY(-4px); border-color: rgba(198,165,106,.65); }
+    .work-card[hidden] { display: none; }
+    .card-image { position: relative; height: 210px; overflow: hidden; background: var(--panel-light); }
+    .card-image img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(.84); transition: opacity .25s ease; }
+    .slide-control { position: absolute; top: 50%; display: grid; width: 34px; height: 34px; place-items: center; transform: translateY(-50%); border: 1px solid rgba(255,255,255,.55); border-radius: 50%; color: white; background: rgba(16,18,17,.55); font-size: 20px; line-height: 1; cursor: pointer; transition: background .2s, color .2s; }
+    .slide-control:hover { color: var(--bg); background: var(--gold); }
+    .slide-control:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+    .slide-control.previous { left: 12px; }
+    .slide-control.next { right: 12px; }
+    .slide-count { position: absolute; right: 14px; bottom: 12px; color: rgba(255,255,255,.9); font: 700 9px/1 var(--sans); letter-spacing: .12em; text-shadow: 0 1px 8px #000; }
+    .card-copy { padding: 24px 23px 25px; }
+    .card-type { margin: 0 0 12px; color: var(--green); font-size: 10px; font-weight: 700; letter-spacing: .1em; }
+    .card-type-note { color: var(--gold); }
+    .card-copy h3 { margin: 0; font: 500 19px/1.55 var(--serif); letter-spacing: .015em; }
+    .card-copy p { margin: 12px 0 0; color: var(--muted); font-size: 12px; line-height: 1.9; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 18px 0 0; padding: 0; list-style: none; }
+    .card-tags li { padding: 5px 8px; border: 1px solid var(--line); color: #c4c4ba; font-size: 9px; letter-spacing: .04em; }
+    .card-tags a { display: block; padding: 7px 10px; border: 1px solid var(--line); color: #c4c4ba; font-size: 9px; font-weight: 700; letter-spacing: .08em; transition: color .2s, border-color .2s, background .2s; }
+    .card-tags a:hover { border-color: var(--gold); color: var(--bg); background: var(--gold); }
+    .about { padding-top: 10px; }
+    .about-panel { display: grid; grid-template-columns: .88fr 1.12fr; min-height: 440px; border: 1px solid var(--line); background: var(--panel); }
+    .about-photo { min-height: 440px; background: url("images/shuji%20yamagiri%20business.JPG") center 38% / cover no-repeat; }
+    .about-copy { align-self: center; padding: clamp(30px, 6vw, 70px); }
+    .about-copy .section-kicker { margin-bottom: 20px; }
+    .about-copy h2 { font-size: clamp(30px, 4vw, 46px); }
+    .about-copy p { color: var(--muted); font: 13px/2.15 var(--serif); }
+    .profile-facts { display: grid; gap: 0; margin: 24px 0 0; border-top: 1px solid var(--line); }
+    .profile-facts > div { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .profile-facts dt { color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .05em; }
+    .profile-facts dd { margin: 0; color: var(--text); font-size: 11px; line-height: 1.75; }
+    .about-copy .signature { margin-top: 28px; color: var(--gold); font: italic 17px/1.4 var(--sans); letter-spacing: .06em; }
+    .support-band { padding: 88px 0; border-top: 1px solid var(--line); background: #171a18; }
+    .support-band .wrap > .section-kicker { margin: 0 0 18px; }
+    .support-band h2 { margin-bottom: 38px; font-size: clamp(32px, 5vw, 54px); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 6vw, 84px); padding-top: 30px; border-top: 1px solid var(--line); }
+    .contact-heading { margin: 0 0 18px; color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .contact-company { margin: 0 0 18px; color: var(--text); font-size: 14px; font-weight: 700; letter-spacing: .04em; }
+    .contact-address { margin: 0 0 22px; color: var(--muted); font-size: 13px; line-height: 1.9; }
+    .contact-details, .social-links { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
+    .contact-details a, .social-links a { color: var(--text); font-size: 13px; line-height: 1.7; text-decoration: underline; text-decoration-color: rgba(198,165,106,.45); text-underline-offset: 4px; overflow-wrap: anywhere; transition: color .2s; }
+    .contact-details a:hover, .social-links a:hover { color: var(--gold); }
+    footer { padding: 25px 0 34px; color: var(--muted); font-size: 10px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+    .footer-label { color: var(--gold); }
+    .footer-link { text-decoration: underline; text-decoration-color: rgba(198,165,106,.6); text-underline-offset: 4px; }
+    @media (max-width: 800px) {
+      .wrap { width: min(100% - 42px, 620px); }
+      .topbar-inner { min-height: 66px; }
+      .nav { gap: 17px; font-size: 9px; }
+      .hero { min-height: 720px; min-height: max(720px, 94svh); }
+      .hero::before { background-position: 56% 24%; }
+      .hero::after { background: linear-gradient(90deg, rgba(12,14,13,.38), rgba(12,14,13,.13) 62%, transparent), linear-gradient(180deg, rgba(12,14,13,.02) 0%, rgba(12,14,13,.12) 38%, rgba(12,14,13,.76) 74%, var(--bg) 100%); }
+      .hero-content { padding-top: clamp(112px, 16vh, 145px); padding-bottom: 48px; }
+      .hero-copy { width: min(430px, 52vw); max-width: none; margin-left: auto; }
+      .hero-actions { gap: 8px; }
+      .hero-actions .button { flex: 1 1 145px; gap: 12px; padding-inline: 10px; }
+      .section { padding: 84px 0; }
+      .section-head { grid-template-columns: 1fr; gap: 18px; margin-bottom: 34px; }
+      .section-kicker { padding-top: 0; }
+      .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .card-image { height: 190px; }
+      .about-panel { grid-template-columns: .85fr 1.15fr; }
+      .about-photo { min-height: 390px; }
+      .contact-grid { gap: 28px; }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: calc(100% - 36px); }
+      .brand { gap: 8px; font-size: 10px; }
+      .brand-mark { width: 27px; }
+      .nav { gap: 13px; letter-spacing: .08em; }
+      .nav a:first-child { display: none; }
+      .hero { display: block; min-height: 0; padding-top: 56svh; }
+      .hero::before { inset: 0 0 auto; height: 56svh; background-position: center 24%; }
+      .hero::after { inset: 0 0 auto; height: 56svh; background: linear-gradient(180deg, rgba(12,14,13,.08), rgba(12,14,13,.04) 62%, var(--bg) 100%); }
+      .hero-content { padding: 0 0 38px; }
+      .hero-copy { width: auto; max-width: none; margin: 0; padding: 24px; }
+      .eyebrow { margin-bottom: 20px; }
+      .hero h1 { font-size: clamp(48px, 15vw, 72px); }
+      .hero-role { margin-top: 21px; font-size: 12px; }
+      .hero-intro { margin-top: 18px; font-size: 12px; }
+      .hero-note { display: none; }
+      .section { padding: 72px 0; }
+      .filters { gap: 6px; }
+      .filter { min-height: 34px; padding-inline: 10px; font-size: 9px; }
+      .work-grid { grid-template-columns: 1fr; gap: 13px; }
+      .card-image { height: 220px; }
+      .card-copy { padding: 21px; }
+      .about-panel { grid-template-columns: 1fr; }
+      .about-photo { min-height: 320px; background-position: center 38%; }
+      .about-copy { padding: 31px 24px 35px; }
+      .profile-facts > div { grid-template-columns: 78px minmax(0, 1fr); gap: 10px; }
+      .profile-facts dt { font-size: 9px; }
+      .profile-facts dd { font-size: 10px; }
+      .support-band { padding: 58px 0; }
+      .support-band h2 { margin-bottom: 28px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 30px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="山切修二プロフィール トップ">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span>D･I･O ENTERTAINMENT</span>
+      </a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="#works">ACTIVITIES</a>
+        <a href="#profile">PROFILE</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="wrap hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Producer / Artist / Stage Director</p>
+          <h1 id="page-title">山切 修二<span>SHUJI YAMAGIRI</span></h1>
+          <p class="hero-role">D･I･Oエンターテインメント代表 / ギタリスト / シンガー<br>舞台監督 / プロデューサー</p>
+          <p class="hero-intro">音楽で世界とつながり、舞台の現場をつくり、人と表現の可能性をひらく。アーティストとプロデューサー、ふたつの視点でエンターテインメントに向き合う。</p>
+          <div class="hero-actions">
+            <a class="button" href="#works">活動・実績を見る</a>
+            <a class="button" href="#contact">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+      <span class="hero-note">A life on and behind the stage</span>
+    </section>
+
+    <section class="section" id="works" aria-labelledby="works-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">01 / Selected Works</p>
+          <div>
+            <h2 id="works-title">活動と実績</h2>
+            <p class="section-lead">音楽、舞台、作曲、講演、アーティスト支援。表現することと、表現が届く場をつくること。その両輪で重ねてきた仕事をご紹介します。</p>
+          </div>
+        </div>
+
+        <div class="filters" role="group" aria-label="実績をカテゴリで絞り込む">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">すべて</button>
+          <button class="filter" type="button" data-filter="music" aria-pressed="false">音楽</button>
+          <button class="filter" type="button" data-filter="stage" aria-pressed="false">演出・舞台監督</button>
+          <button class="filter" type="button" data-filter="compose" aria-pressed="false">作曲</button>
+          <button class="filter" type="button" data-filter="talk" aria-pressed="false">講演・コーチング</button>
+          <button class="filter" type="button" data-filter="support" aria-pressed="false">アーティスト支援</button>
+        </div>
+
+        <div class="work-grid" aria-live="polite">
+          <article class="work-card" data-category="music">
+            <div class="card-image" data-carousel data-images='["images/222.PNG","images/DIO%20website23.png","images/DIO%20website25.png","images/DIO%20website3.png","images/eef7c0_ee137fd895c44093a8b034564f85ad36~mv2_d_6000_4000_s_4_2.jpg"]' data-image-positions='{"3":"center 15%"}' aria-label="KAO=Sの写真スライド">
+              <img src="images/222.PNG" alt="剣舞師・川渕かおりとギタリスト山切修二によるKAO=S" loading="lazy">
+              <button class="slide-control previous" type="button" data-direction="-1" aria-label="KAO=Sの前の写真">‹</button>
+              <button class="slide-control next" type="button" data-direction="1" aria-label="KAO=Sの次の写真">›</button>
+              <span class="slide-count" aria-live="polite">01 / 05</span>
+            </div>
+            <div class="card-copy">
+              <p class="card-type">Rock Duo <span class="card-type-note">KAO=S（カオス）</span></p>
+              <h3>世界のステージで鳴らす</h3>
+              <p>剣舞師・シンガーの川渕かおりとのロックユニットKAO=S（カオス）ではリーダー/ギタリストを務め、世界最大音楽見本市SXSW、米CNN番組を機に、13か国のフェスティバルなどに出演。</p>
+              <div class="card-tags">
+                <a href="https://www.kaos-japan.net/biography" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+                <a href="https://youtu.be/dj7tjZlwano?si=VLzpn5EqblfxcaCc" target="_blank" rel="noopener noreferrer">桜の鬼 MV</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" data-category="music">
+            <div class="card-image" data-carousel data-images='["images/b8a68563-8220-43d3-8059-230ee7953d77.JPG","images/DIO%20website5.jpg","images/IMG_6055.JPG"]' data-image-positions='{"0":"center 10%"}' aria-label="ソロシンガー活動の写真スライド">
+              <img src="images/b8a68563-8220-43d3-8059-230ee7953d77.JPG" alt="ギターを手にするソロシンガー山切修二" loading="lazy">
+              <button class="slide-control previous" type="button" data-direction="-1" aria-label="ソロシンガーの前の写真">‹</button>
+              <button class="slide-control next" type="button" data-direction="1" aria-label="ソロシンガーの次の写真">›</button>
+              <span class="slide-count" aria-live="polite">01 / 03</span>
+            </div>
+            <div class="card-copy">
+              <p class="card-type">Solo Singer <span class="card-type-note">山切修二</span></p>
+              <h3>50歳から、もう一度歌う</h3>
+              <p>KAO=Sの始動に伴い、15年程休止していたソロシンガーとしての活動を、50歳より再開。一年をかけ47都道府県一人ツアーを敢行、ホール公演を完遂。幅広い声域と声色を持ち、オープンコードを使ったギター演奏を得意とする。</p>
+              <div class="card-tags">
+                <a href="https://www.dio-entertainment.com/shujiyamagiri/profile" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+                <a href="https://youtu.be/0mTiISUpgVY" target="_blank" rel="noopener noreferrer">YouTube</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" data-category="compose">
+            <div class="card-image" data-carousel data-images='["images/kaori%20kawabuchi.jpg","images/saudi2.JPG","images/R0500-62A_3896.JPG"]' aria-label="和の演舞・ショウの写真スライド">
+              <img src="images/kaori%20kawabuchi.jpg" alt="川渕かおりによる剣舞" loading="lazy">
+              <button class="slide-control previous" type="button" data-direction="-1" aria-label="和の演舞・ショウの前の写真">‹</button>
+              <button class="slide-control next" type="button" data-direction="1" aria-label="和の演舞・ショウの次の写真">›</button>
+              <span class="slide-count" aria-live="polite">01 / 03</span>
+            </div>
+            <div class="card-copy">
+              <p class="card-type">Japanese Entertainment <span class="card-type-note">和のショウ提供</span></p>
+              <h3>和のエンターテインメントを世界へ</h3>
+              <p>川渕かおりとのユニットKAO=Sの各国での公演を機に、和楽器奏者や剣舞師とバンドによる大所帯和風エンターテインメントショウをプロデュース。東京の他、スペイン、ドイツ、サウジアラビアで披露。</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-category="stage">
+            <div class="card-image" data-carousel data-images='["images/DIO%20website12.JPG","images/DIO%20website8.jpg","images/main%20matsuri%202026%201.jpeg"]' aria-label="MAIN MATSURIの写真スライド">
+              <img src="images/DIO%20website12.JPG" alt="ドイツMAIN MATSURIのステージと観客" loading="lazy">
+              <button class="slide-control previous" type="button" data-direction="-1" aria-label="MAIN MATSURIの前の写真">‹</button>
+              <button class="slide-control next" type="button" data-direction="1" aria-label="MAIN MATSURIの次の写真">›</button>
+              <span class="slide-count" aria-live="polite">01 / 03</span>
+            </div>
+            <div class="card-copy">
+              <p class="card-type">Stage Producer <span class="card-type-note">プロデュース/キャスティング</span></p>
+              <h3>独でのステージプロデュース</h3>
+              <p>フランクフルト／オフッフェンバッハで開催される日本文化フェスティバルMAIN MATSURIのステージを2018年よりプロデュース。演者・奏者のキャスティング、プログラム制作・舞台監督・テーマ曲作曲も担う。MAIN MATSURI は2024年にドイツ外務大臣表彰を拝受。</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-category="stage">
+            <div class="card-image" data-carousel data-images='["images/shuji%20stage.png","images/main%20matsuri%202026.jpeg","images/fd%20bigba.PNG"]' data-image-positions='{"0":"center 35%"}' aria-label="舞台演出と舞台監督の写真スライド">
+              <img src="images/shuji%20stage.png" alt="舞台演出の現場に立つ山切修二" loading="lazy">
+              <button class="slide-control previous" type="button" data-direction="-1" aria-label="舞台演出の前の写真">‹</button>
+              <button class="slide-control next" type="button" data-direction="1" aria-label="舞台演出の次の写真">›</button>
+              <span class="slide-count" aria-live="polite">01 / 03</span>
+            </div>
+            <div class="card-copy">
+              <p class="card-type">Stage Direction <span class="card-type-note">演出・舞台監督</span></p>
+              <h3>国賓向けショウからJAZZ、ホテルイベントまで</h3>
+              <p>自社公演主催の他にも、外注でプレゼン代行・総合演出や舞台監督業務を担当。ABAC（APECビジネス諮問委員会）国際会議ガラディナーショー総合演出（2024）、東京都倫理法人会「倫理経営フォーラム」舞台監督（2026、京王プラザホテル新宿）、Strange Community 舞台監督（2026、渋谷JZ brat・さくらホール）他多数。</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-category="talk">
+            <div class="card-image">
+              <img src="images/kouenkai.JPEG" alt="講演とライブを行う山切修二" loading="lazy">
+              <span class="card-index">06 / TALK & VOICE</span>
+            </div>
+            <div class="card-copy">
+              <p class="card-type">Speaker / Vocal Coach <span class="card-type-note">講演会・レッスン</span></p>
+              <h3>舞台の表と裏の経験値を活かす。</h3>
+              <p>国内外のステージに立ちつつ、舞台裏で公演を支えてきた経験を人生に重ねて語る講演会を開催。また、海外の環境下や日本全国一人ツアーでの声の維持や、響かせる発声方法など、経験値に沿った単発ボーカルコーチングを行う。</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-category="support">
+            <div class="card-image">
+              <img src="images/DIO-website4.png" alt="アーティストの発信を支える制作活動" loading="lazy">
+              <span class="card-index">07 / ARTIST SUPPORT</span>
+            </div>
+            <div class="card-copy">
+              <p class="card-type">Artist Support <span class="card-type-note">活動支援サポート</span></p>
+              <h3>表現を、届ける力に変える</h3>
+              <p>主に、40代以上のアーティストを対象に、クラウドファンディング制作代行、販促ツール制作代行、音楽配信代行WEBSITE・LP制作、動画制作等をサポート。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="profile" aria-labelledby="profile-title">
+      <div class="wrap">
+        <div class="about-panel">
+          <div class="about-photo" role="img" aria-label="舞台に立つ山切修二"></div>
+          <div class="about-copy">
+            <p class="section-kicker">02 / Profile</p>
+            <h2 id="profile-title">舞台の上にも、<br>その先にも。</h2>
+            <p>ギタリスト・シンガーとして世界各地のステージに立ちながら、演出家・舞台監督として舞台の全体をつくる。演者と制作、表現と運営、その双方を経験してきた視点を生かし、アーティストやプロジェクトの可能性をかたちにしています。</p>
+            <p>人生の節目に新しい一歩を踏み出すこと、そして誰かが自分らしく表現できる場をつくること。音楽と舞台の現場で培った経験を、次の挑戦へつなげていきます。</p>
+            <dl class="profile-facts">
+              <div><dt>生年月日</dt><dd>1975年1月8日</dd></div>
+              <div><dt>出身 / 在住</dt><dd>山口県宇部市出身 / 東京都在住</dd></div>
+              <div><dt>学歴</dt><dd>福岡大学 法学部 法律学科</dd></div>
+              <div><dt>活動</dt><dd>シンガー / ギタリスト / ソングライター / 経営者 / 演出・プロデュース</dd></div>
+              <div><dt>所属・役職</dt><dd>D･I･Oエンターテインメント合同会社 代表社員</dd></div>
+            </dl>
+            <div class="signature">Shuji Yamagiri</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-band" id="contact">
+      <div class="wrap">
+        <p class="section-kicker">03 / Contact</p>
+        <h2>連絡先・SNSなど</h2>
+        <div class="contact-grid">
+          <div>
+            <h3 class="contact-heading">Company / Contact</h3>
+            <p class="contact-company">D･I･Oエンターテインメント合同会社</p>
+            <p class="contact-address">〒170-0005<br>東京都豊島区南大塚2-5-20 ミモザビル3F</p>
+            <ul class="contact-details">
+              <li><a href="tel:05036285014">TEL 050-3628-5014</a></li>
+              <li><a href="mailto:contact@dio-entertainment.com">E-mail: contact@dio-entertainment.com</a></li>
+              <li><a href="https://www.dio-entertainment.com" target="_blank" rel="noopener noreferrer">Company Website ↗</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="contact-heading">Social</h3>
+            <ul class="social-links">
+              <li><a href="https://www.facebook.com/shuji.yamagiri/" target="_blank" rel="noopener noreferrer">Facebook ↗</a></li>
+              <li><a href="https://www.instagram.com/shujiyamagiri/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+              <li><a href="https://x.com/yamagiri_shuji" target="_blank" rel="noopener noreferrer">X ↗</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span class="footer-label">D･I･O ENTERTAINMENT</span>
+      <span>© Shuji Yamagiri</span>
+      <a class="footer-link" href="https://www.dio-entertainment.com" target="_blank" rel="noopener noreferrer">Company Website ↗</a>
+    </div>
+  </footer>
+
+  <script>
+    const filterButtons = document.querySelectorAll(".filter");
+    const workCards = document.querySelectorAll(".work-card");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+        filterButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+        workCards.forEach((card) => {
+          card.hidden = filter !== "all" && card.dataset.category !== filter;
+        });
+      });
+    });
+
+    document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+      const images = JSON.parse(carousel.dataset.images);
+      const image = carousel.querySelector("img");
+      const counter = carousel.querySelector(".slide-count");
+      const imagePositions = JSON.parse(carousel.dataset.imagePositions || "{}");
+      let current = 0;
+
+      image.style.objectPosition = imagePositions[current] || "";
+
+      const showImage = (offset) => {
+        current = (current + offset + images.length) % images.length;
+        image.src = images[current];
+        image.style.objectPosition = imagePositions[current] || "";
+        counter.textContent = `${String(current + 1).padStart(2, "0")} / ${String(images.length).padStart(2, "0")}`;
+      };
+
+      carousel.querySelectorAll("[data-direction]").forEach((button) => {
+        button.addEventListener("click", () => showImage(Number(button.dataset.direction)));
+      });
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        window.setInterval(() => {
+          if (!carousel.closest(".work-card").hidden && !carousel.matches(":hover, :focus-within") && !document.hidden) {
+            showImage(1);
+          }
+        }, 5000);
+      }
+    });
+  </script>
+</body>
+</html>

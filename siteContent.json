@@ -1,0 +1,311 @@
+{
+  "ja": {
+    "hero": {
+      "eyebrow": "D・I・Oエンターテインメント",
+      "catchcopy": "現役アーティストの現場力を、成果につながる舞台へ。",
+      "subcopy": "国内外の第一線で戦ってきたアーティストと制作チームが、演出・演者手配・育成・発信までを一貫してプロデュース。企業、国際イベント、ブランドの目的を、強い体験に変えます。",
+      "primaryCta": "企画を相談する",
+      "secondaryCta": "実績を見る",
+      "slides": [
+        { "type": "brand", "title": "D.I.O ENTERTAINMENT", "image": "images/DIO website16.JPG" },
+        { "title": "STAGE DIRECTION & PRODUCTION", "jaTitle": "舞台演出<br>公演プロデュース", "subtitle": "With experience on stages in Japan and abroad and in producing performances, we support you from planning through on-site direction.", "jaSubtitle": "国内外の様々なステージに立ち、制作に携わった経験値で、<br>ご期待にお応えします。。", "image": "images/DIO-website1.png" },
+        { "title": "ARTIST REPRESENTATION & LIVE PERFORMANCE", "jaTitle": "所属アーティスト<br>ライブ・演舞提供", "subtitle": "We deliver one-of-a-kind live performances and stage shows refined through numerous international tours.", "jaSubtitle": "各国の舞台で磨いたロック×剣舞×和楽器のショウを軸に、<br>ニーズにお応えいたします。", "image": "images/dio-top2.png" },
+        { "title": "LESSONS & WORKSHOPS", "jaTitle": "レッスン＆ワークショップ<br>講演・実技指導", "subtitle": "From sword dance and stage combat instruction to talks shaped by extensive experience on and behind the stage.", "jaSubtitle": "殺陣・剣舞・ヴォーカル指導や、豊富な経験に基づいた<br>元気になる講演を行います。", "image": "images/dio-top3.png" },
+        { "title": "ARTIST SUPPORT", "jaTitle": "アーティスト支援<br>Web・デザイン・動画制作", "subtitle": "We support the diverse work artists need to sustain and grow their creative activities.", "jaSubtitle": "アーティスト活動に必要な様々な業務をサポートします。", "image": "images/dio-top4.png" }
+      ]
+    },
+    "proof": {
+      "heading": "世界の多様なステージに立ち、<br>プロデュースしてきた経験値で、<br>最高のショウをご提供、サポートします。",
+      "subcopy": "音楽・和文化・ゲーム・舞台・映画、、、<br>二人の現役アーティストが、国内外の様々なステージの表と裏で体得した<br>機動力と現場力で応えます。"
+    },
+    "stats": [
+      {
+        "value": "20+",
+        "label": "Countries",
+        "description": "世界20か国以上で公演・活動を展開"
+      },
+      {
+        "value": "1",
+        "label": "外務大臣表彰",
+        "description": "MAIN MATSURIでの国際文化交流への貢献"
+      },
+      {
+        "value": "2024",
+        "label": "ABAC国際会議",
+        "description": "ガラディナーショウ総合演出"
+      },
+      {
+        "value": "47",
+        "label": "都道府県ツアー",
+        "description": "50歳でソロツアーを達成"
+      }
+    ],
+    "services": [
+      {
+        "id": "stage-production",
+        "title": "舞台演出・総合プロデュース",
+        "englishTitle": "STAGE PRODUCTION",
+        "subtitle": "舞台演出・総合プロデュース・舞台監督",
+        "description": "企画意図を読み解き、構成・演出・キャスティング・進行・現場統括まで、経験豊富なプロが一気通貫で設計します。",
+        "image": "images/2.png",
+        "details": ["企画設計・演出プランニング", "キャスティング・制作進行", "現場統括・舞台監督"]
+      },
+      {
+        "id": "performance",
+        "title": "和のライブパフォーマンス",
+        "englishTitle": "JAPANESE CULTURAL & LIVE PERFORMANCE",
+        "subtitle": "第一線のアーティストによるライブ／ショウ",
+        "description": "海外公演や国際舞台で磨かれた表現力を、会場・観客・目的に合わせて編成。記憶に残るライブ、ショウ、式典演出を届けます。",
+        "image": "images/ideal 1.png",
+        "artists": [
+          { "name": "川渕かおり", "description": "各国式典やイベントOP披露歴のある、邪や災を祓い、祈りを込め幸を呼び込む破邪剣舞。" },
+          { "name": "偉伝或〜IDEAL〜", "description": "男女混成の殺陣・剣舞・扇舞・立ち回りなど豪と華のパフォーマンスチーム。人数調整可能。" },
+          { "name": "KAO=S（カオス）", "description": "代表曲「桜の鬼」で米CNN番組に出演し、海外公演で評価を得るギター／剣舞／歌のロックユニット。" },
+          { "name": "LADY SAMURAI’S CHAOS", "description": "KAO=Sに侍や和楽器奏者が加わり、様々な和の演目を贈る音楽とパフォーマンスのグループ。人数調整可能。" }
+        ]
+      },
+      {
+        "id": "keynote-live",
+        "title": "育成・ボイスコーチング・講演",
+        "englishTitle": "WORKSHOP, VOICE COACHING & KEYNOTE",
+        "subtitle": "アーティスト育成・研修・講演",
+        "description": "身体・声・表現の専門家が、現場で使える技術と視点を共有。ワークショップから講演、個別指導まで設計します。",
+        "image": "images/kaori haja kenbu.png",
+        "details": ["川渕かおり剣舞レッスン：不定期グループワークショップ／個人受講", "山切修二ボイスコーチング：声が出る・響く・歌える・持続できる・かっこよく見える実践指導", "講演会：山切修二「国内外のステージと制作現場から見た人生と景色」", "講演会：川渕かおり「体を動かす事が心を動かす事。表現を使い切る仕事感と人生観」"]
+      },
+      {
+        "id": "artist-support",
+        "title": "アーティスト支援・クリエイティブ制作",
+        "englishTitle": "ARTIST SUPPORT & CREATIVE SERVICES",
+        "subtitle": "発信・制作・活動基盤の強化",
+        "description": "公演や作品を届け続けるために、Web、映像、SNS、音楽配信、権利処理まで、活動の裏側を実務で支えます。",
+        "image": "images/DIO website8.jpg",
+        "support": ["クラウドファンディングページ作成代行", "イベント・公演のランディングページ（LP）制作", "SNS用ショート動画シリーズ制作", "音楽配信代行、楽曲の権利関係処理・契約サポート"]
+      }
+    ],
+    "profile": {
+      "heading": "Profile",
+      "people": [
+        {
+          "name": "川渕 かおり",
+          "nameEn": "Kaori Kawabuchi",
+          "image": "images/IMG_4088.PNG",
+          "role": "剣舞師・モーションアクター・女優・シンガー",
+          "biography": "",
+          "appealPoints": [
+            { "title": "剣舞師・殺陣師", "description": "LADY SAMURAI の呼称、約20カ国の式典・フェス・イベント等で剣舞を披露<br>侍チーム【偉伝或~IDEAL~】主宰者、国内外で演舞多数<br>ワークショップ開催（ドイツ、フランス、チリ、サウジアラビア）<br>舞台・映像作品での殺陣指導" },
+            { "title": "モーションアクター", "description": "RPG『NieR:Automata』2B役、『Final Fantasy』シリーズ 他多数出演<br>NETFLIX アニメ『攻殻機動隊 SAC_2045』草薙素子役<br>ワークショップ開催（ドイツ、マレーシア、シンガポール）" },
+            { "title": "女優・舞台演出", "description": "豪サントリーCM出演、豪・フィンランド映画出演<br>舞台ヨコオタロウ作「爆剣」他、舞台多数出演<br>偉伝或~IDEAL~舞台公演シリーズ 作・演出（ラゾーナ川崎プラザソル、吉祥寺シアター等）" },
+            { "title": "シンガー・作詞家・声優", "description": "ロックユニットKAO=Sシンガー、米SXSW・米CNN番組・13か国のフェス等出演<br>声優としてアニメ『NieR:Automata』ジャッカス役担当" }
+          ]
+        },
+        {
+          "name": "山切 修二",
+          "nameEn": "Shuji Yamagiri",
+          "image": "images/IMG_4172.JPG",
+          "role": "D･I･Oエンターテインメント代表 ・ ギタリスト ・ シンガー ・ 舞台監督 ・ プロデューサー",
+          "biography": "",
+          "appealPoints": [
+            { "title": "作曲", "description": "ドイツフェスMAIN MATSURIテーマ曲、宇部マテリアルズ株式会社社歌作曲　他<br>偉伝或~IDEAL~舞台シリーズ劇伴曲提供" },
+            { "title": "ギタリスト・シンガー", "description": "ロックユニットKAO=Sギタリスト、米SXSW・米CNN番組・13か国のフェス等出演<br>50歳よりソロシンガー活動再開、一年かけ47都道府県ツアー＆ホール公演完遂" },
+            { "title": "講演家・ヴォーカルコーチング", "description": "「舞台の表裏と人生」テーマの講演会&amp;ライブ開催<br>実践的ライブヴォーカル・パーソナルコーチング" },
+            { "title": "演出・舞台監督", "description": "ドイツMAIN MATSURIフェス舞台プロデュース<br>（2018年〜、フランクフルト ・ オッフェンバッハ）<br><br>ABAC（APECビジネス諮問委員会）国際会議ガラディナーショウ総合演出<br>（2024年、東京プリンスホテル）<br><br>東京都倫理法人会「倫理経営フォーラム」舞台監督<br>（2026年、京王プラザホテル新宿）　他多数" },
+            { "title": "アーティスト支援", "description": "クラウドファンディング制作代行、配信代行<br>WEBSITE、LP制作、動画制作" }
+          ]
+        }
+      ]
+    },
+    "media": {
+      "heading": "Media / Press",
+      "items": [
+        { "type": "CNN / Press", "title": "KAO=S「桜の鬼」海外評価", "description": "ギター、剣舞、歌を融合したKAO=Sの活動と海外公演の実績。", "image": "images/CNN.jpg" },
+        { "type": "International Stage", "title": "MAIN MATSURI / Germany", "description": "国際文化交流の舞台で届けた日本の音楽とパフォーマンス。", "image": "images/mainmatsuri2022.JPG" },
+        { "type": "Performance Archive", "title": "IDEAL / Live Action", "description": "偉伝或〜IDEAL〜による殺陣・剣舞・扇舞の舞台表現。", "image": "images/ideal 3.png" }
+      ]
+    },
+    "contact": {
+      "heading": "Contact",
+      "intro": "イベントの目的、開催時期、会場、想定規模など、決まっている範囲でお聞かせください。",
+      "labels": {
+        "name": "お名前",
+        "organization": "会社名・団体名",
+        "email": "メールアドレス",
+        "phone": "電話番号",
+        "service": "ご相談内容",
+        "eventDate": "開催予定日",
+        "venue": "開催地・会場",
+        "budget": "ご予算",
+        "message": "お問い合わせ内容",
+        "privacyConsent": "プライバシーポリシーに同意する",
+        "submit": "問い合わせを送信"
+      },
+      "serviceOptions": [
+        "舞台演出・舞台監督",
+        "侍・剣舞パフォーマンス",
+        "講演×音楽ライブ",
+        "アーティスト支援",
+        "その他"
+      ],
+      "requiredMark": "必須"
+    }
+  },
+  "en": {
+    "hero": {
+      "eyebrow": "DIO Entertainment",
+      "catchcopy": "Front-line artists. One production partner. Stronger experiences.",
+      "subcopy": "Working artists and producers with experience across Japan and the world handle direction, casting, development, and communications as one connected process for businesses, brands, and international events.",
+      "primaryCta": "Discuss Your Project",
+      "secondaryCta": "View Our Work",
+      "slides": [
+        { "type": "brand", "title": "D.I.O ENTERTAINMENT", "image": "images/DIO website16.JPG" },
+        { "title": "STAGE DIRECTION & PRODUCTION", "subtitle": "With experience on stages in Japan and abroad and in producing performances, we support you from planning through on-site direction.", "image": "images/DIO-website1.png" },
+        { "title": "ARTIST REPRESENTATION & LIVE PERFORMANCE", "subtitle": "Distinctive live performances and Japanese stage shows for audiences worldwide.", "image": "images/dio-top2.png" },
+        { "title": "LESSONS & WORKSHOPS", "subtitle": "Practical instruction in sword dance, stage combat, and performance.", "image": "images/dio-top3.png" },
+        { "title": "ARTIST SUPPORT", "subtitle": "We support the diverse work artists need to sustain and grow their creative activities.", "image": "images/dio-top4.png" }
+      ]
+    },
+    "stats": [
+      {
+        "value": "20+",
+        "label": "Countries",
+        "description": "Performances and creative activities delivered across more than 20 countries"
+      },
+      {
+        "value": "1",
+        "label": "Foreign Minister's Award",
+        "description": "Recognized for contributions to international cultural exchange through MAIN MATSURI"
+      },
+      {
+        "value": "2024",
+        "label": "ABAC Gala Dinner Show",
+        "description": "Overall production and creative direction for the ABAC international conference gala"
+      },
+      {
+        "value": "47",
+        "label": "Prefectures Toured",
+        "description": "A solo tour across all 47 prefectures, completed at age 50"
+      }
+    ],
+    "services": [
+      {
+        "id": "stage-production",
+        "title": "Stage Production",
+        "subtitle": "Creative direction, production, and stage management",
+        "description": "We turn a brief into a clear audience experience, covering concept, direction, casting, show flow, and on-site leadership with one experienced production team.",
+        "image": "images/2.png",
+        "details": ["Concept and creative planning", "Casting and production coordination", "On-site direction and stage management"]
+      },
+      {
+        "id": "performance",
+        "title": "Japanese Cultural & Live Performance",
+        "subtitle": "Live shows by working artists with global stage experience",
+        "description": "We match proven performers and flexible ensembles to your venue, audience, and purpose, from international events and brand programs to festivals and ceremonies.",
+        "image": "images/ideal 1.png",
+        "artists": [
+          { "name": "Kaori Kawabuchi", "description": "Haja Kenbu, a sword dance that dispels hardship and invites good fortune, presented at international ceremonies and events." },
+          { "name": "IDEAL", "description": "A mixed-gender team of sword fighting, sword dance, fan dance, and stage combat. Flexible ensemble size." },
+          { "name": "KAO=S", "description": "A guitar, sword-dance, and vocal rock unit known for ‘Sakura no Oni’, CNN coverage, and acclaimed overseas shows." },
+          { "name": "LADY SAMURAI’S CHAOS", "description": "KAO=S joined by samurai and traditional instrumentalists for a varied Japanese music and performance program." }
+        ]
+      },
+      {
+        "id": "keynote-live",
+        "title": "Workshop, Voice Coaching & Keynote Lecture",
+        "subtitle": "Artist development, coaching, and talks",
+        "description": "Practical programs led by specialists in movement, voice, and performance, from workshops and keynotes to focused one-to-one coaching.",
+        "image": "images/kaori haja kenbu.png",
+        "details": ["Kaori Kawabuchi sword-dance lessons: group workshops and private sessions", "Shuji Yamagiri voice coaching: practical one-off coaching for projection, resonance, singing, stamina, and presence", "Shuji Yamagiri keynote: life and perspective from stages and production rooms in Japan and abroad", "Kaori Kawabuchi keynote: how physical movement moves the mind, and a working life across music, games, culture, and film"]
+      },
+      {
+        "id": "artist-support",
+        "title": "Artist Support & Consultant Services",
+        "subtitle": "Production and communications support for artists",
+        "description": "We strengthen the practical foundation behind an artist's work, from web and video to social channels, distribution, rights, and contracts.",
+        "image": "images/DIO website8.jpg",
+        "support": ["Crowdfunding page creation and production", "Landing pages for events and performances", "Short-form social video series", "Music distribution, rights administration, and contract support"]
+      }
+    ],
+    "profile": {
+      "heading": "Profile",
+      "people": [
+        {
+          "name": "Shuji Yamagiri",
+          "image": "images/shuji yamagiri.JPG",
+          "role": "Director, Stage Manager, Keynote Speaker, and Musician",
+          "biography": "Representative of DIO Entertainment. Shuji has led productions including MAIN MATSURI and the ABAC international conference gala dinner show, and has stage-managed events at JZ Brat, Sakura Hall, Densho Hall, and other major venues. As a musician with KAO=S, he performed at SXSW and composed the theme song for Germany's MAIN MATSURI. At 50, he completed a solo tour across all 47 prefectures of Japan.",
+          "appealPoints": [
+            "Transforms an event's purpose into a compelling audience experience",
+            "Leads complex productions from international events to live concerts",
+            "Connects speaking, music, and stagecraft into one coherent story"
+          ]
+        },
+        {
+          "name": "Kaori Kawabuchi",
+          "image": "images/kaori kawabuchi.jpg",
+          "role": "Sword-fight and sword-dance performer / LADY SAMURAI",
+          "biography": "A member of IDEAL, a samurai sword-fight and sword-dance performance team. As LADY SAMURAI, Kaori brings the beauty of Japanese physical expression and action to audiences in Japan and around the world. Through stage works and international performances, she presents Japanese culture with both strength and precision.",
+          "appealPoints": [
+            "High-impact sword fighting and sword dance with precise technique",
+            "Physical storytelling and stage presence that cross language barriers",
+            "Performance and program proposals tailored to each production's world"
+          ]
+        },
+        {
+          "name": "KAO=S / LADY SAMURAI’S CHAOS",
+          "image": "images/KAO=S artist photo.JPG",
+          "role": "Guitar, sword dance, and vocal rock unit / Japanese live project",
+          "biography": "KAO=S, led by Shuji Yamagiri and Kaori Kawabuchi, appeared on a CNN program with its signature song ‘Sakura no Oni’. The unit has performed in Japan and overseas, with LADY SAMURAI’S CHAOS expanding the format through samurai and traditional instrumentalists.",
+          "appealPoints": [
+            "A distinctive live language combining music and sword dance",
+            "International reach through CNN coverage, SXSW, and overseas shows",
+            "Flexible ensemble size and program design"
+          ]
+        },
+        {
+          "name": "IDEAL",
+          "image": "images/ideal 1.png",
+          "role": "Sword fighting, sword dance, fan dance, and stage combat team",
+          "biography": "A mixed-gender performance team delivering bold, elegant stages through sword fighting, sword dance, fan dance, and choreographed combat. IDEAL adapts its ensemble size and program to festivals, ceremonies, corporate events, and international cultural exchange.",
+          "appealPoints": [
+            "Action performance balancing impact and precision",
+            "Flexible cast size, program length, and staging",
+            "Visual storytelling that crosses language barriers"
+          ]
+        }
+      ]
+    },
+    "media": {
+      "heading": "Media / Press",
+      "items": [
+        { "type": "CNN / Press", "title": "KAO=S and ‘Sakura no Oni’", "description": "International coverage of KAO=S and its fusion of guitar, sword dance, and vocals.", "image": "images/CNN.jpg" },
+        { "type": "International Stage", "title": "MAIN MATSURI / Germany", "description": "Japanese music and performance presented through a major cultural exchange platform.", "image": "images/mainmatsuri2022.JPG" },
+        { "type": "Performance Archive", "title": "IDEAL / Live Action", "description": "Sword fighting, sword dance, fan dance, and stage combat by IDEAL.", "image": "images/ideal 3.png" }
+      ]
+    },
+    "contact": {
+      "heading": "Contact",
+      "intro": "Tell us what you know so far, including your event's purpose, date, venue, and expected scale.",
+      "labels": {
+        "name": "Name",
+        "organization": "Company or organization",
+        "email": "Email address",
+        "phone": "Phone number",
+        "service": "What can we help with?",
+        "eventDate": "Event date",
+        "venue": "City and venue",
+        "budget": "Estimated budget",
+        "message": "Message",
+        "privacyConsent": "I agree to the Privacy Policy",
+        "submit": "Send Inquiry"
+      },
+      "serviceOptions": [
+        "Stage direction and stage management",
+        "Samurai sword-dance performance",
+        "Keynote and live concert",
+        "Artist support",
+        "Other"
+      ],
+      "requiredMark": "Required"
+    }
+  }
+}
